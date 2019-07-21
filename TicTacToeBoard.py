@@ -232,7 +232,6 @@ class Board:
 
     def tohtml(self) -> str:
         data = self.state_to_char_list()
-        print ('tohtml ',data)
         html = '<table border="1"><tr>{}</tr></table>'.format('</tr><tr>'
             .join('<td>{}</td>'.format('</td><td>'
                                        .join(str(val) for val in row)) for row in data)
