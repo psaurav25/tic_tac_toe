@@ -51,7 +51,7 @@ class Board:
 
             if state is State.CROSS_WIN:
                 print(self.cross_player.name,' Won ')
-            else:
+            elif state is State.NAUGHT_WIN:
                 print(self.naught_player.name,' Won')
 
             if state is State.DRAW:
